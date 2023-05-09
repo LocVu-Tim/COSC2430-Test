@@ -23,7 +23,10 @@ app.set("views", "./views"); // setting config option for views folder
 
 // routes to views
 app.get("/", (req, res) => {
-  res.render("index");
+  const viewsCSS = {
+    fileCSS: "/css/Vendor/main.css",
+  };
+  res.render("index", viewsCSS);
 });
 
 app.use(vendorRoutes);
