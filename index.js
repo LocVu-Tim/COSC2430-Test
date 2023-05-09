@@ -9,6 +9,7 @@ const vendorProductRoutes = require("./Routes/vendorProducts");
 const vendorLoginRoutes = require("./Routes/vendorLogin");
 
 // Middleware execution for static files
+module.exports = path.dirname(require.main.filename)
 app.use(express.static(path.join(__dirname, "public"))); // Serve static files
 // Call bootstrap css file with class path
 app.use(
