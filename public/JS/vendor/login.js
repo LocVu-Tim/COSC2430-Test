@@ -59,10 +59,9 @@ passwordInput.addEventListener("keyup", (e) => {
 
 // Upload Profile Image
 
-
 let uploadFile = document.getElementById("upload-file");
-let profileImage = document.getElementById('profile-image');
+let profileImage = document.getElementById("profile-image");
 
-uploadFile.onchange = function(){
+uploadFile.onchange = function () {
   profileImage.src = URL.createObjectURL(uploadFile.files[0]);
-}
+};

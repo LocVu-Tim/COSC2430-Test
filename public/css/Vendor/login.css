@@ -69,7 +69,7 @@
   opacity: 0;
   cursor: pointer;
 }
-.profile-image-container img{
+.profile-image-container img {
   object-fit: cover;
   background-size: contain;
   background-repeat: no-repeat;

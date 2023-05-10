@@ -3,13 +3,8 @@ const app = express(); // Store express in app
 const path = require("path");
 const port = 3000;
 
-// Declare routes path
-const vendorRoutes = require("./Routes/vendor");
-const vendorProductRoutes = require("./Routes/vendorProducts");
-const vendorLoginRoutes = require("./Routes/vendorLogin");
-
 // Middleware execution for static files
-module.exports = path.dirname(require.main.filename)
+module.exports = path.dirname(require.main.filename);
 app.use(express.static(path.join(__dirname, "public"))); // Serve static files
 // Call bootstrap css file with class path
 app.use(
@@ -22,23 +17,21 @@ app.use(
 app.set("view engine", "ejs");
 app.set("views", "./views"); // setting config option for views folder
 
-// routes to views
+// views
 app.get("/", (req, res) => {
-  const viewsCSS = {
-    fileCSS: "/css/Vendor/main.css",
-  };
-  res.render("index", viewsCSS);
+  res.render("index");
+});
+app.get("/vendor", (req, res) => {
+  res.render("vendor/vendor");
+});
+app.get("/vendor/products", (req, res) => {
+  res.render("vendor/products");
+});
+app.get("/vendor/login", (req, res) => {
+  res.render("vendor/login");
 });
 
-app.use(vendorRoutes);
-app.use(vendorProductRoutes);
-app.use(vendorLoginRoutes);
-
-app.get("/Vendor-Sign-in", (req, res) => {
-  res.render("Vendor/Sign-in");
-});
-
-// Starting routing
+// Starting 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });
