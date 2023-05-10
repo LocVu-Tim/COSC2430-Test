@@ -26,7 +26,7 @@
   --tran-03: all 0.2s ease;
 }
 
-.page {
+section {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -75,6 +75,7 @@
   background-repeat: no-repeat;
 }
 
+/* Login */
 .container {
   position: relative;
   max-width: 430px;
@@ -86,7 +87,6 @@
   margin: 0 20px;
 }
 .container .forms {
-  display: flex;
   align-items: center;
   height: 440px;
   width: 200%;
@@ -114,6 +114,7 @@
 }
 .container.active .forms {
   height: fit-content;
+  display: flex;
 }
 .container .form .title {
   position: relative;
@@ -215,6 +216,145 @@
 .form .login-signup {
   margin-top: 30px;
   text-align: center;
+}
+
+/* Registration Form */
+.container.active {
+  position: relative;
+  max-width: 900px;
+  width: 100%;
+  border-radius: 6px;
+  padding: 30px;
+  margin: 0 15px;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container.active .signup form {
+  position: relative;
+  margin-top: 16px;
+  min-height: 394px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.container.active .signup form .box {
+  position: absolute;
+  background-color: #fff;
+  transition: 0.3s ease;
+  width: 100%;
+}
+.container.active .signup form .form.second {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(100%);
+}
+.signup form.secActive .form.second {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+.signup form.secActive .box.first {
+  opacity: 0;
+  pointer-events: none;
+  transform: translateX(-100%);
+}
+.container.active .signup form .title {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 6px 0;
+  color: #333;
+}
+.container.active .signup form .fields {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.signup form .fields .input-field {
+  display: flex;
+  width: calc(100% / 3 - 15px);
+  flex-direction: column;
+  margin: 4px 0;
+}
+.signup .input-field label {
+  font-size: 12px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+.signup .input-field input,
+select {
+  padding: 0 15px;
+  height: 42px;
+  margin: 8px 0;
+  position: unset;
+}
+.signup .input-field input :focus,
+.input-field select:focus {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+.signup .input-field select,
+.input-field input[type="date"] {
+  color: #707070;
+}
+.signup .input-field input[type="date"]:valid {
+  color: #333;
+}
+.container.active .signup form button,
+.backBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  max-width: 200px;
+  width: 100%;
+  border: none;
+  outline: none;
+  color: #fff;
+  border-radius: 5px;
+  margin: 25px 0;
+  background-color: #4070f4;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+.container.active .signup form .btnText {
+  font-size: 14px;
+  font-weight: 400;
+}
+form button:hover {
+  background-color: #265df2;
+}
+form button i,
+form .backBtn i {
+  margin: 0 6px;
+}
+form .backBtn i {
+  transform: rotate(180deg);
+}
+form .buttons {
+  display: flex;
+  align-items: center;
+}
+form .buttons button,
+.backBtn {
+  margin-right: 14px;
+}
+@media (max-width: 750px) {
+  .container form {
+    overflow-y: scroll;
+  }
+  .container form::-webkit-scrollbar {
+    display: none;
+  }
+  form .fields .input-field {
+    width: calc(100% / 2 - 15px);
+  }
+}
+@media (max-width: 550px) {
+  form .fields .input-field {
+    width: 100%;
+  }
 }
 
 /* Validation */
