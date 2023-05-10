@@ -2,7 +2,9 @@ const container = document.querySelector(".container"),
   pwShowHide = document.querySelectorAll(".showHidePw"),
   pwFields = document.querySelectorAll(".password"),
   signUp = document.querySelector(".signup-link"),
-  login = document.querySelector(".login-link");
+  login = document.querySelector(".login-link"),
+  next = document.querySelector(".next"),
+  back = document.querySelector(".back");
 //   js code to show/hide password and change icon
 pwShowHide.forEach((eyeIcon) => {
   eyeIcon.addEventListener("click", () => {
@@ -30,21 +32,13 @@ login.addEventListener("click", () => {
 });
 
 // sign up form
-const form = document.querySelector("form"),
-  nextBtn = document.querySelector(".nextBtn"),
-  backBtn = document.querySelector(".backBtn"),
-  allInput = document.querySelectorAll(".first input");
-nextBtn.addEventListener("click", () => {
-  allInput.forEach((input) => {
-    if (input.value != "") {
-      form.classList.add("secActive");
-    } else {
-      form.classList.remove("secActive");
-    }
-  });
+// js code to change Vendor registration
+next.addEventListener("click", () => {
+  container.classList.add("change");
 });
-backBtn.addEventListener("click", () => form.classList.remove("secActive"));
-
+back.addEventListener("click", () => {
+  container.classList.remove("change");
+});
 // Validation
 // const passwordInput = document.querySelector(".pass-field input");
 // const eyeIcon = document.querySelector(".pass-field i");

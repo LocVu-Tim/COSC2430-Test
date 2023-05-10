@@ -2,153 +2,90 @@
 <link rel="stylesheet" href="/css/vendor/login.css"/>
 
 <body>
-  <section>
-    <div class="container">
- 
-      <!-- <div class="profile-image-container">
-        <label for="upload-file"></label>
-        <img src="/images/vendor/vendorLogin.png" alt="Profile Image" id="profile-image">
-        
-        <input type="file" id="upload-file" accept="image/jpeg, image/jpg, image/png" onchange="readURL(this);">
-      </div> -->
-
-      <div class="forms">
-          <div class="form login">
-            <span class="title">Vendor Login</span>
-              <form action="#">
-                  <div class="input-field">
-                      <input type="text" placeholder="Enter your email" required>
-                      <i class="uil uil-envelope icon"></i>
-                  </div>
-                  <div class="input-field">
-                      <input type="password" class="password" placeholder="Enter your password" required>
-                      <i class="uil uil-lock icon"></i>
-                      <i class="uil uil-eye-slash showHidePw"></i>
-                  </div>
-                  <div class="checkbox-text">
-                      <div class="checkbox-content">
-                          <input type="checkbox" id="logCheck">
-                          <label for="logCheck" class="text">Remember me</label>
-                      </div>
-                      
-                      <a href="#" class="text">Forgot password?</a>
-                  </div>
-                  <div class="input-field button">
-                      <input type="submit" value="Login">
-                  </div>
-              </form>
-              <div class="login-signup">
-                  <span class="text">Not a vendor?
-                      <a href="#" class="text signup-link">Signup Now</a>
-                  </span>
-              </div>
-          </div>
-          <!-- Registration Form -->
-          <div class="form signup">
-              <span class="title">Vendor Registration</span>
-              <form action="#">
-                <div class="box first">
-                    <div class="details personal">
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>Username</label>
-                                <input type="text" placeholder="Enter your username" required>
-                            </div>
-                            <!-- <div class="input-field">
-                                <label>Date of Birth</label>
-                                <input type="date" placeholder="Enter birth date" required>
-                            </div> -->
-                            <div class="input-field">
-                                <label>Password</label>
-                                <input type="text" placeholder="Enter your password" required>
-                            </div>
-                            <!-- <div class="input-field">
-                                <label>Mobile Number</label>
-                                <input type="number" placeholder="Enter mobile number" required>
-                            </div>
-                            <div class="input-field">
-                                <label>Gender</label>
-                                <select required>
-                                    <option disabled selected>Select gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>Others</option>
-                                </select>
-                            </div>
-                            <div class="input-field">
-                                <label>Occupation</label>
-                                <input type="text" placeholder="Enter your ccupation" required>
-                            </div> -->
-                      </div>
+    <div class="container box">
+        <div class="forms">
+            <div class="form login">
+                <span class="title">Login</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your username" required>
+                        <i class="uil uil-user"></i>
                     </div>
-                    <div class="details ID">
-                      <span class="title">Business Details</span>
-                        <div class="fields">
-                            <div class="input-field">
-                                <label>Business name</label>
-                                <input type="text" placeholder="Enter business name" required>
-                            </div>
-                            <div class="input-field">
-                                <label>Business address</label>
-                                <input type="text" placeholder="Enter business address" required>
-                            </div>
-                            <!-- <div class="input-field">
-                                <label>Issued Authority</label>
-                                <input type="text" placeholder="Enter issued authority" required>
-                            </div>
-                            <div class="input-field">
-                                <label>Issued State</label>
-                                <input type="text" placeholder="Enter issued state" required>
-                            </div>
-                            <div class="input-field">
-                                <label>Issued Date</label>
-                                <input type="date" placeholder="Enter your issued date" required>
-                            </div>
-                            <div class="input-field">
-                                <label>Expiry Date</label>
-                                <input type="date" placeholder="Enter expiry date" required>
-                            </div> -->
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
                         </div>
-                        <div class="login-signup">
-                          <span class="text">Already a vendor?
-                              <a href="#" class="text login-link">Login Now</a>
-                            </span>
-                        </div>
-                        <button class="nextBtn">
-                            <span class="btnText">Next</span>
-                            <i class="uil uil-navigator"></i>
-                        </button>
-                    </div> 
+                        
+                        <a href="#" class="text">Forgot password?</a>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="Login">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup Now</a>
+                    </span>
                 </div>
-                <div class="form second">
-                  <div class="profile-image-container">
-                  <label for="upload-file"></label>
-                  <img src="/images/vendor/vendorLogin.png" alt="Profile Image" id="profile-image">
-            
-                  <input type="file" id="upload-file" accept="image/jpeg, image/jpg, image/png" onchange="readURL(this);">
-                  </div>
-                </div>
-    
-                <div class="buttons">
-                  <div class="backBtn">
-                      <i class="uil uil-navigator"></i>
-                      <span class="btnText">Back</span>
-                  </div>
-                  
-                  <button class="sumbit">
-                      <span class="btnText">Submit</span>
-                      <i class="uil uil-navigator"></i>
-                  </button>
-                </div>
-              </form>
             </div>
-              
-            
-          </div>
-      </div>
-    
-  
-  </section>
+            <!-- Registration Form -->
+            <div class="form signup">
+                <span class="title">Registration</span>
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your username" required>
+                        <i class="uil uil-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your business name" required>
+                        <i class="uil uil-house-user"></i>
+                    </div>
+                    <div class="input-field">
+                        <input type="text" placeholder="Enter your business address" required>
+                        <i class="uil uil-building"></i>
+                    </div>
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="termCon">
+                            <label for="termCon" class="text">I accepted all terms and conditions</label>
+                        </div>
+                    </div>
+                    <div class="input-field button">
+                        <input type="button" value="Next" class="text next">
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="#" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+            </div>
+            <!-- Profile Picture input -->
+            <div class="form image">
+                <span class="title">Registration</span>
+                    <div class="profile-image-container">
+                        <label for="upload-file"></label>
+                        <img src="/images/vendor/vendorLogin.png" alt="Profile Image" id="profile-image">
+                        
+                        <input type="file" id="upload-file" accept="image/jpeg, image/jpg, image/png" onchange="readURL(this);">
+                    </div>
+            </div>
+
+        </div>
+    </div>
+        
+ 
   <script src="/js/vendor/login.js"></script>
 
 
