@@ -269,7 +269,7 @@ section {
 .container.active .signup form .fields {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
 }
 .signup form .fields .input-field {
@@ -294,13 +294,10 @@ select {
 .input-field select:focus {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
 }
-.signup .input-field select,
-.input-field input[type="date"] {
+.signup .input-field select{
   color: #707070;
 }
-.signup .input-field input[type="date"]:valid {
-  color: #333;
-}
+
 .container.active .signup form button,
 .backBtn {
   display: flex;
