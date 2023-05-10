@@ -180,3 +180,14 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
   border-top-left-radius: 0;
   border-top-right-radius: 0;
 }
+
+@media (max-width: 1000px) {
+  .col-lg-9 ul li {
+    visibility: hidden;
+  }
+}
+@media (max-width: 400px) {
+  .col-lg-9 {
+    visibility: hidden;
+  }
+}

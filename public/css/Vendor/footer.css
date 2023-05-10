@@ -18,7 +18,7 @@ nav.close ~ footer {
   color: #f2f2f2;
 }
 #tempaltemo_footer a:hover {
-  color: var(--primary-color);
+  color: #0e4bf1;
 }
 #tempaltemo_footer ul.footer-link-list li {
   padding-top: 10px;
@@ -71,11 +71,11 @@ nav.close ~ footer {
 }
 @media (max-width: 400px) {
   .vendorPage footer {
-    left: 0;
+    left: 73;
     width: 100%;
   }
   nav.close ~ footer {
-    left: 73px;
-    width: calc(100% - 73px);
+    left: 250px;
+    width: calc(100% - 250px);
   }
 }

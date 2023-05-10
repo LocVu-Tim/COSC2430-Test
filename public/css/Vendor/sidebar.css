@@ -169,7 +169,7 @@ body.dark li a:hover:before {
   background-color: var(--text-color);
 }
 .menu-items li a i {
-  font-size: 24px;
+  font-size: 28px;
   min-width: 45px;
   height: 100%;
   display: flex;
@@ -307,8 +307,12 @@ body.dark .switch:before {
     min-height: 10vh;
   }
 }
-
-@media (max-width: 400px) {
+@media (max-width: 700px) {
+  nav.close ~ .dashboard .boxes {
+    width: 100vw;
+  }
+}
+@media (max-width: 300px) {
   nav {
     width: 0px;
   }
