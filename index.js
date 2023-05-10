@@ -30,8 +30,10 @@ app.get("/vendor/products", (req, res) => {
 app.get("/vendor/login", (req, res) => {
   res.render("vendor/login");
 });
-
-// Starting 
+app.get("/vendor/signup", (req, res) => {
+  res.render("vendor/signup");
+});
+// Starting
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
 });

@@ -1,8 +1,6 @@
 const container = document.querySelector(".container"),
   pwShowHide = document.querySelectorAll(".showHidePw"),
   pwFields = document.querySelectorAll(".password"),
-  signUp = document.querySelector(".signup-link"),
-  login = document.querySelector(".login-link"),
   next = document.querySelector(".next"),
   back = document.querySelector(".back");
 //   js code to show/hide password and change icon
@@ -22,13 +20,6 @@ pwShowHide.forEach((eyeIcon) => {
       }
     });
   });
-});
-// js code to appear signup and login form
-signUp.addEventListener("click", () => {
-  container.classList.add("active");
-});
-login.addEventListener("click", () => {
-  container.classList.remove("active");
 });
 
 // sign up form
@@ -67,7 +58,6 @@ back.addEventListener("click", () => {
 //     }
 //   });
 // });
-
 
 // Upload and preview Profile Image
 let uploadFile = document.getElementById("upload-file");
