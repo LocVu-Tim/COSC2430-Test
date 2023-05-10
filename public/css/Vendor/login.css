@@ -44,9 +44,8 @@ body {
 /* Give credit for ChatGPT */
 .profile-image-container {
   position: relative;
-  width: 150px;
-  left: 120px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   overflow: hidden;
   background-color: #f1f1f1;
@@ -54,7 +53,8 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 0;
-  margin-top: 30px;
+  margin-left: 70px;
+  border: 0.1px solid #0e4bf1;
 }
 
 .profile-image-container label {
@@ -71,8 +71,8 @@ body {
 }
 .profile-image-container img {
   object-fit: cover;
-  background-size: contain;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
 }
 
 /* Login */
