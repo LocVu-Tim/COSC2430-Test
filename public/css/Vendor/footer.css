@@ -12,7 +12,7 @@ nav.close ~ footer {
   width: calc(100% - 73px);
 }
 .text-success {
-  color: var(--primary-color) !important;
+  color: #0e4bf1 !important;
 }
 #tempaltemo_footer a {
   color: #f2f2f2;

@@ -17,7 +17,7 @@ app.use(
 app.set("view engine", "ejs");
 app.set("views", "./views"); // setting config option for views folder
 
-// views
+// Route
 app.get("/", (req, res) => {
   res.render("index");
 });
