@@ -34,12 +34,12 @@ body {
   background: linear-gradient(to right, #0083b0, #00b4db);
 }
 
-.container .profile-image-container {
+/* .container .profile-image-container {
   display: none;
 }
 .container.change .profile-image-container {
   display: flex;
-}
+} */
 
 /* Give credit for ChatGPT */
 .profile-image-container {
@@ -246,6 +246,6 @@ body {
 
 @media (max-width: 470px) {
   .profile-image-container {
-    margin-left: 100%;
+    margin-left: 0;
   }
 }
