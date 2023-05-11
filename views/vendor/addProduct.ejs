@@ -1,0 +1,64 @@
+<!-- RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 2
+Author: Vu Loc
+ID: S3891483
+Acknowledgement: https://www.web-leb.com/code/25 
+-->
+<%- include('../partials/head.ejs') %>
+<link rel="stylesheet" href="/css/vendor/addProduct.css"/>
+<body class="vendorPage">
+    <%- include('../partials/vendor-sidebar.ejs') %>
+
+    <section class="section dashboard" id="events">
+        
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        
+            <div class="search-box">
+                <i class="uil uil-search"></i>
+                <input type="text" placeholder="Search here...">
+            </div>
+        </div> 
+    
+        <div class="container">
+            <div class="row">
+            <div class="col-lg-12 text-center">
+                <div class="section-heading">
+                <h2>Add your product</h2>
+                </div>
+            </div>
+            <div class="container">
+                <section class="card">
+                <div class="text-content">
+                    <input name="nameProduct" class="nameProduct" type="text" placeholder="Enter your product name" required>
+                    <input name="priceProduct" class="priceProduct" type="text" placeholder="Enter your product price" required>
+                    <textarea name="description" class="desProduct" maxlength="500" placeholder="Enter your product description" required></textarea>
+                    <!--Dropdown [3]-->
+                    <label for="purpose" title="Contact Purpose">
+                        <select name="purpose" class="cateProduct" required>
+                            <option value="" disabled selected>Choose category</option>
+                            <option value="I want to sell books">Clothing</option>
+                            <option value="I want to buy books">Electronic</option>
+                            <option value="I want to buy books">Home</option>
+                            <option value="I want to buy books">Books</option>
+                        </select>
+                    </label>
+                    <button type="submit" class="text">Add</button>
+               
+                </div>
+                <div class="profile-image-container visual">
+                    <label for="upload-file"></label>
+                    <img src="/images/vendor/vendorLogin.png" alt="Profile Image" id="profile-image">
+                    
+                    <input type="file" id="upload-file" accept="jpeg, jpg, png" onchange="readURL(this);">
+                </div>
+                </section> 
+            </div>
+    </section>
+    
+    <script src="/JS/vendor/script.js"></script>
+</body>
+<%- include('../partials/vendor-footer.ejs') %>
+</html>

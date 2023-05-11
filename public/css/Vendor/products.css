@@ -40,27 +40,6 @@ ody.dark {
   --box3-color: #3a3b3c;
   --title-icon-color: #ccc;
 }
-/* === Custom Scroll Bar CSS === */
-::-webkit-scrollbar {
-  width: 8px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: var(--primary-color);
-  border-radius: 12px;
-  transition: all 0.3s ease;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #0b3cc1;
-}
-
-body.dark::-webkit-scrollbar-thumb:hover,
-body.dark .activity-data::-webkit-scrollbar-thumb:hover {
-  background: #3a3b3c;
-}
 
 /*Vendor Product pages*/
 .events {
@@ -81,7 +60,7 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 }
 
 .events .item {
-  background-color: var(--box3-color);
+  background: linear-gradient(90deg, rgb(79 125 253) 0%, rgb(51 153 237) 50%);
   border-radius: 25px;
   position: relative;
   padding: 40px;
@@ -133,13 +112,13 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
 
 .events .item ul li span {
   display: inline-block;
-  font-size: 14px;
+  font-size: 20px;
   color: #4a4a4a;
   margin-bottom: 10px;
 }
 
 .events .item ul li h6 {
-  font-size: 16px;
+  font-size: 20px;
   color: #7a6ad8;
   font-weight: 600;
 }
@@ -179,6 +158,11 @@ body.dark .activity-data::-webkit-scrollbar-thumb:hover {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+
+.container button {
+  font-size: 23px;
+  margin-top: -50px;
 }
 
 @media (max-width: 1000px) {

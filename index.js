@@ -33,6 +33,9 @@ app.get("/vendor/login", (req, res) => {
 app.get("/vendor/signup", (req, res) => {
   res.render("vendor/signup");
 });
+app.get("/vendor/addProduct", (req, res) => {
+  res.render("vendor/addProduct");
+});
 // Starting
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

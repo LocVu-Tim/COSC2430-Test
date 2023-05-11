@@ -31,7 +31,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f2f2f2; /* Apple white */
+  background: linear-gradient(to right, #0083b0, #00b4db);
 }
 
 .container .profile-image-container {
@@ -52,7 +52,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 0;
-  margin-left: 15%;
+  margin-left: 21%;
   border: 0.1px solid var(--primary-color);
 }
 
@@ -113,8 +113,6 @@ body {
 }
 
 .container .upload-img {
-  padding: 30px;
-  background-color: #fff;
   transition: margin-left 0.18s ease;
   padding-top: 46px;
 }
@@ -244,4 +242,10 @@ body {
 .form .login-signup {
   margin-top: 30px;
   text-align: center;
+}
+
+@media (max-width: 470px) {
+  .profile-image-container {
+    margin-left: 100%;
+  }
 }
