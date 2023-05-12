@@ -152,9 +152,6 @@ nav.close ~ .dashboard {
     width: calc(100% / 2 - 15px);
     margin-top: 15px;
   }
-  .numer {
-    font-size: 70%;
-  }
 }
 @media (max-width: 560px) {
   .dash-content .boxes .box {

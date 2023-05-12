@@ -307,17 +307,18 @@ body.dark .switch:before {
     min-height: 10vh;
   }
 }
-@media (max-width: 700px) {
+@media all and (max-width: 700px) {
   nav.close ~ .dashboard .boxes {
     width: 100vw;
   }
 }
-@media (max-width: 300px) {
+@media all and (max-width: 700px) {
   nav {
     width: 0px;
   }
   nav.close {
     width: 73px;
+    padding-top: 60px;
   }
   nav .logo_name {
     opacity: 0;
