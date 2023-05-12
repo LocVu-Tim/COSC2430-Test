@@ -24,41 +24,56 @@ Acknowledgement: https://www.web-leb.com/code/25
     
         <div class="container">
             <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="section-heading">
-                <h2>Add your product</h2>
+                <div class="col-lg-12 text-center">
+                    <div class="section-heading">
+                    <h2>Add your product</h2>
+                    </div>
+                </div>
+                <div class="container">
+                    <section class="card">
+                        <form class="row g-3">
+                            <div class="col-md-6">
+                                <label for="inputName" class="form-label">Product name</label>
+                                <input type="text" class="form-control" required>
+                            </div>
+
+                            <div class="col-12">
+                                <label for="inputDescription" class="form-label">Description</label>
+                                <textarea type="text" maxlenght="500"  class="form-control" cols="30"
+                                rows="10" required> </textarea>
+                            </div>
+
+
+                            <div class="col-md-4">
+                            <label for="inputCategory" class="form-label">Category</label>
+                            <select class="form-select" required> 
+                                <option selected></option>
+                                <option>Cloth</option>
+                                <option>Book</option>
+                                <option>Electronic</option>
+                            </select>
+                            </div>
+                            <div class="col-md-2">
+                            <label for="inputPrice" class="form-label">Price</label>
+                            <input type="number" class="form-control" required>
+                            </div>
+                            <div class="d-grid d-md-flex justify-content-md-start">
+                                <button class="btn btn-primary btn-lg" type="submit">Add your product!</button>
+                              </div>
+                        </form>
+                        <div class="profile-image-container visual">
+                            <label for="upload-file"></label>
+                            <img src="/images/vendor/vendorLogin.png" alt="Profile Image" id="profile-image">
+                            
+                            <input type="file" id="upload-file" accept="jpeg, jpg, png" onchange="readURL(this);">
+                        </div>
+                    </section> 
                 </div>
             </div>
-            <div class="container">
-                <section class="card">
-                <div class="text-content">
-                    <input name="nameProduct" class="nameProduct" type="text" placeholder="Enter your product name" required>
-                    <input name="priceProduct" class="priceProduct" type="text" placeholder="Enter your product price" required>
-                    <textarea name="description" class="desProduct" maxlength="500" placeholder="Enter your product description" required></textarea>
-                    <!--Dropdown [3]-->
-                    <label for="purpose" title="Contact Purpose">
-                        <select name="purpose" class="cateProduct" required>
-                            <option value="" disabled selected>Choose category</option>
-                            <option value="I want to sell books">Clothing</option>
-                            <option value="I want to buy books">Electronic</option>
-                            <option value="I want to buy books">Home</option>
-                            <option value="I want to buy books">Books</option>
-                        </select>
-                    </label>
-                    <button type="submit" class="text">Add</button>
-               
-                </div>
-                <div class="profile-image-container visual">
-                    <label for="upload-file"></label>
-                    <img src="/images/vendor/vendorLogin.png" alt="Profile Image" id="profile-image">
-                    
-                    <input type="file" id="upload-file" accept="jpeg, jpg, png" onchange="readURL(this);">
-                </div>
-                </section> 
-            </div>
+        </div>
     </section>
-    
     <script src="/JS/vendor/script.js"></script>
+    <script src="/JS/vendor/login.js"></script>
 </body>
 <%- include('../partials/vendor-footer.ejs') %>
 </html>

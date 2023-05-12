@@ -48,13 +48,17 @@ ody.dark {
   padding: 10px 14px;
   transition: var(--tran-05);
 }
+.container {
+  padding-top: 50px;
+}
+
+/* Background Card */
 .card {
   background: #000046;
   background: -webkit-linear-gradient(to right, #1cb5e0, #000046);
   background: linear-gradient(to right, #1cb5e0, #000046);
   border-radius: 24px 24px 24px 48px;
   padding: 48px 48px 48px 308px;
-  margin: 84px 0;
   min-width: 640px;
   display: flex;
   flex-direction: row;
@@ -89,41 +93,6 @@ ody.dark {
   background: #051c5e;
   color: white;
 }
-
-.card .visual img {
-  height: 100%;
-  border-radius: 24px;
-}
-
-.card .profile-image-container {
-  width: 240px;
-  height: 100%;
-  position: absolute;
-  top: -12px;
-  left: 24px;
-  overflow: hidden;
-  border-radius: 24px;
-}
-
-/* Input profile picture */
-.profile-image-container label {
-  cursor: pointer;
-}
-.profile-image-container input[type="file"] {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: pointer;
-}
-.profile-image-container img {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-}
-
 /* Product details */
 .container input {
   outline: none;
@@ -152,6 +121,36 @@ ody.dark {
   border: 1px solid rgba(253, 253, 253, 0.363);
   border-radius: 0.375rem;
   flex: 1 1 auto;
+}
+
+/* Input profile picture */
+.card .profile-image-container {
+  width: 240px;
+  height: 60%;
+  position: absolute;
+  left: 24px;
+  overflow: hidden;
+  border-radius: 24px;
+}
+
+.card .visual img {
+  border-radius: 24px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.profile-image-container label {
+  cursor: pointer;
+}
+.profile-image-container input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
 }
 
 @media all and (max-width: 1100px) {
