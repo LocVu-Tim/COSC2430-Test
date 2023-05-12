@@ -109,11 +109,11 @@ nav.close ~ .dashboard {
   left: 73px;
   width: calc(100% - 73px);
 }
-nav .logo-name {
+nav .logo-name a {
   display: flex;
   align-items: center;
 }
-nav .logo-image {
+nav .logo-image a {
   display: flex;
   justify-content: center;
   min-width: 45px;
