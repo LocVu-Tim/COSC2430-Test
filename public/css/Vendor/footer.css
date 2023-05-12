@@ -1,3 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
 /* Footer */
 .vendorPage footer {
   width: calc(100% - 250px);
@@ -44,9 +52,6 @@ nav.close ~ footer {
   border-color: #2d343f !important;
 }
 
-#sr-only {
-  color: var(--primary-color);
-}
 .sr-only-focusable:active,
 .sr-only-focusable:focus {
   clip: auto;
@@ -59,7 +64,7 @@ nav.close ~ footer {
 .input-group > .form-control,
 .input-group > .form-floating,
 .input-group > .form-select {
-  color: white;
+  color: #000046;
 }
 
 /* Footer Responsive */

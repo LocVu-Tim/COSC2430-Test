@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -70,29 +71,7 @@ ody.dark {
   flex-direction: column;
   width: calc(60vw - 192px);
 }
-.card .text-content h3 {
-  margin: 0;
-  font-size: 1.5em;
-  max-width: 20ch;
-  color: #fff;
-}
-.card .text-content p {
-  margin: 25px 0 24px;
-  color: #fff;
-}
-.card .text-content button {
-  border: 3px solid #f2f2f2;
-  color: #ffffff;
-  align-self: flex-start;
-  text-decoration: none;
-  padding: 16px 32px;
-  border-radius: 12px;
-  transition: 400ms all;
-}
-.card .text-content button:hover {
-  background: #051c5e;
-  color: white;
-}
+
 /* Product details */
 .container input {
   outline: none;
@@ -105,9 +84,13 @@ ody.dark {
   border-radius: 0.375rem;
   flex: 1 1 auto;
 }
-.container input::placeholder {
-  color: rgb(216, 212, 212);
+.container h2 {
+  color: var(--text-color);
 }
+.container form label {
+  font-size: 20px;
+}
+
 .container input:focus {
   border: 1px solid rgb(99 102 241);
 }
