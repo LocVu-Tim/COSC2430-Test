@@ -39,7 +39,9 @@ app.get("/vendor/addProduct", (req, res) => {
 app.get("/vendor/profile", (req, res) => {
   res.render("vendor/profile");
 });
-
+app.get("/vendor/termService", (req, res) => {
+  res.render("vendor/termService");
+});
 // Starting
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);

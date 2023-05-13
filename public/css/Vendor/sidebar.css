@@ -169,8 +169,8 @@ body.dark li a:hover:before {
   background-color: var(--text-color);
 }
 .menu-items li a i {
-  font-size: 28px;
-  min-width: 45px;
+  font-size: 32px;
+  min-width: 40px;
   height: 100%;
   display: flex;
   align-items: center;
