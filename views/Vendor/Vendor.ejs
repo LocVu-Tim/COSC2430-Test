@@ -53,59 +53,68 @@ Acknowledgement: https://www.codingnepalweb.com/admin-dashboard-panel-html-css-j
         </div>
   
         <div class="activity-data">
-          <div class="data">
+            <div class="data">
+              <% products.forEach(function(product) { %>
+                <div class="data-title">
+                  <div class="data-list name"><%= product.name %></div>
+                  <div class="data-list email"><%= product.email %></div>
+                  <div class="data-list added-date"><%= product.addedDate %></div>
+                  <div class="data-list type"><%= product.type %></div>
+                  <div class="data-list status"><%= product.status %></div>
+                </div>
+              <% }); %>
+            </div>
 
-          </div>
-          <div class="data names">
-            <span class="data-title">Name</span>
-            <span class="data-list">Products Name</span>
-            <span class="data-list">Products Name</span>
-            <span class="data-list">Products Name</span>
-            <span class="data-list">Products Name</span>
-            <span class="data-list">Products Name</span>
-            <span class="data-list">Products Name</span>
-            <span class="data-list">Products Name</span>
-          </div>
-          <div class="data email">
-            <span class="data-title">Email</span>
-            <span class="data-list">premshahi@gmail.com</span>
-            <span class="data-list">deepachand@gmail.com</span>
-            <span class="data-list">prakashhai@gmail.com</span>
-            <span class="data-list">manishachand@gmail.com</span>
-            <span class="data-list">pratimashhai@gmail.com</span>
-            <span class="data-list">manshahi@gmail.com</span>
-            <span class="data-list">ganeshchand@gmail.com</span>
-          </div>
-          <div class="data joined">
-            <span class="data-title">Added Date</span>
-            <span class="data-list">2022-02-12</span>
-            <span class="data-list">2022-02-12</span>
-            <span class="data-list">2022-02-13</span>
-            <span class="data-list">2022-02-13</span>
-            <span class="data-list">2022-02-14</span>
-            <span class="data-list">2022-02-14</span>
-            <span class="data-list">2022-02-15</span>
-          </div>
-          <div class="data type">
-            <span class="data-title">Product Type</span>
-            <span class="data-list">New</span>
-            <span class="data-list">Member</span>
-            <span class="data-list">Member</span>
-            <span class="data-list">New</span>
-            <span class="data-list">Member</span>
-            <span class="data-list">New</span>
-            <span class="data-list">Member</span>
-          </div>
-          <div class="data status">
-            <span class="data-title">Status</span>
-            <span class="data-list">Active</span>
-            <span class="data-list">Active</span>
-            <span class="data-list">Pending</span>
-            <span class="data-list">Delivering</span>
-            <span class="data-list">Delivering</span>
-            <span class="data-list">Pending</span>
-            <span class="data-list">Active</span>
-          </div>
+            <div class="data names">
+              <span class="data-title">Name</span>
+              <span class="data-list">Products Name</span>
+              <span class="data-list">Products Name</span>
+              <span class="data-list">Products Name</span>
+              <span class="data-list">Products Name</span>
+              <span class="data-list">Products Name</span>
+              <span class="data-list">Products Name</span>
+              <span class="data-list">Products Name</span>
+            </div>
+            <div class="data email">
+              <span class="data-title">Email</span>
+              <span class="data-list">premshahi@gmail.com</span>
+              <span class="data-list">deepachand@gmail.com</span>
+              <span class="data-list">prakashhai@gmail.com</span>
+              <span class="data-list">manishachand@gmail.com</span>
+              <span class="data-list">pratimashhai@gmail.com</span>
+              <span class="data-list">manshahi@gmail.com</span>
+              <span class="data-list">ganeshchand@gmail.com</span>
+            </div>
+            <div class="data joined">
+              <span class="data-title">Added Date</span>
+              <span class="data-list">2022-02-12</span>
+              <span class="data-list">2022-02-12</span>
+              <span class="data-list">2022-02-13</span>
+              <span class="data-list">2022-02-13</span>
+              <span class="data-list">2022-02-14</span>
+              <span class="data-list">2022-02-14</span>
+              <span class="data-list">2022-02-15</span>
+            </div>
+            <div class="data type">
+              <span class="data-title">Product Type</span>
+              <span class="data-list">New</span>
+              <span class="data-list">Member</span>
+              <span class="data-list">Member</span>
+              <span class="data-list">New</span>
+              <span class="data-list">Member</span>
+              <span class="data-list">New</span>
+              <span class="data-list">Member</span>
+            </div>
+            <div class="data status">
+              <span class="data-title">Status</span>
+              <span class="data-list">Active</span>
+              <span class="data-list">Active</span>
+              <span class="data-list">Pending</span>
+              <span class="data-list">Delivering</span>
+              <span class="data-list">Delivering</span>
+              <span class="data-list">Pending</span>
+              <span class="data-list">Active</span>
+            </div>
         </div>
       </div>
     </div>
